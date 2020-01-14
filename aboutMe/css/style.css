@@ -1,0 +1,138 @@
+/* The following is an attempt to set a gif as the background. First attempts are not successful. Commenting out to keep available but not use */
+/* body{
+    background-image:url('https://media.giphy.com/media/9PTaAhwri56V2/giphy.gif');
+    background-position:center;
+    background-size:cover;
+} */
+
+/* Link to the color palette for this lab https://www.shutterstock.com/blog/10-gorgeous-color-schemes-for-websites?kw=&gclsrc=aw.ds&gclid=EAIaIQobChMI0baIo_2S5AIVh9lkCh3lCwGGEAAYAiAAEgL0V_D_BwE using #2 Scholar
+Hex: 333D51 (blue)/ D3AC2B (yellow)/ CBD0D8 (gray)/ F4F3EA (cream)*/
+
+body, html{
+  background-color:#F4F3EA; /* cream/beige-y */
+  color:#333D51; /* dark blue ish */
+  height: 100%;
+  background-size: cover;
+  width: 100%;
+  margin-left: 0;
+}
+
+main{
+  background-size: cover;
+}
+
+#titleBar{
+  position: fixed;
+  padding: 5px;
+  background-image: linear-gradient(245deg, #D3AC2B, #CBD0D8);
+  color: #333D51;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-weight: 500;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 20px;
+}
+
+#titleBar > a:visited {
+  color: #333D51;
+}
+
+/* Below, we will attempt to create a parallax scroll effect for the page. */
+  
+.parallax { 
+  color: #F4F3EA;
+  font-size: 64px;
+  text-shadow: 2px 2px 2px #000000;
+
+  margin-top:0;
+  border-top:0;
+  padding-top:0;
+  top:0;
+  
+  height: 400px; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-sub{
+  color: #F4F3EA;
+  font-size: 32px;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+.parallax-overlay
+{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
+  padding-top: 40px;
+}
+
+.parallax-photo{
+  float: right;
+  display: block;
+  margin-top: 200px;
+  height: 200px;
+  width: auto;
+}
+
+.info-block{
+  /* height: auto; */
+  padding-top: 12px;
+  padding-bottom: 6px;
+  background-color: #333D51;
+  font-size: 18px;
+  color: #D3AC2B;
+}
+
+.info-block :first-child{
+  margin-top: 0px;
+}
+
+.info-block :last-child{
+  margin-bottom: 0px;
+}
+
+.dark-box{
+  /* background-color: rgba(0, 4, 36, 0.637); */
+  /* #242b38 is roughly a darker #333D51 */
+  background-color: #242b3890;
+  width: 25%;
+  margin-left: 5%;
+  margin-right: 5%;
+  /* height: 10%; */
+  /* margin-left: 20px; */
+ }
+ 
+ .box-container{
+  display: flex;
+ }
+
+.info-block > p{
+   text-indent: 20px;
+   margin-left: 70px;
+   margin-right: 40px;
+ }
+
+ .dark-box > ol > li > a:visited{
+   color: #CBD0D8;
+ }
+
+ /* not the best color to use at the moment, as it looks too close to the gray, but it'll do for now as it's a much better contrast than the standard blue */
+ .dark-box > ol > li > a:link{
+  color: #F4F3EA;
+}
+
+/* Applying the same two rules above to UL lists as well. I'll change the way I reference these links later so I can erase a few lines */
+.dark-box > ul > li > a:visited{
+  color: #CBD0D8;
+}
+
+.dark-box > ul > li > a:link{
+ color: #F4F3EA;
+}
